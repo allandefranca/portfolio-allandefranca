@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Allandefranca - Landing Page</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Allan de Franca</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#01">Home</a></li>
+                    <li><a href="#02">Gallery</a></li>
+                    <!-- <li><a href="#03">Services</a></li> -->
+                    <li><a href="#03">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+
+    <section class="home">
+        <div class="container">
+            <div class="section" id="01">
+                <div class="flexcontent">
+                  <div class="container">
+                    <section>
+                      <div class="title"><span>Allan de Franca</span><span>Graphic Designer and<a target="" href="#03">Web Developer</a></span></div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="02">
+        <div class="flexcontent">
+            <div class="container">
+                <h1>GALLERY</h1>
+
+                <div class="gallery-wrap">
+                  <div class="item item-1"></div>
+                  <div class="item item-2"></div>
+                  <div class="item item-3"></div>
+                  <div class="item item-4"></div>
+                  <div class="item item-5"></div>
+                </div>
+          </div>
+        </div>
+
+        <div class="bgflex-container">
+            <div class="bgflex-item"></div>
+            <div class="bgflex-item"></div>
+            <div class="bgflex-item"></div>
+            <div class="bgflex-item"></div>
+            <div class="bgflex-item"></div>
+        </div>
+    </section>
+
+    <section class="info" id="03">
+        <div class="flexcontent">
+            <div class="container">
+                <div class="person">
+                  <div class="container">
+                    <div class="container-inner">
+                      <img class="circle" src="./src/img/01_IMG.JPG"/>
+                      <img class="img img1" src="./src/img/Allan_portrait_ico.png"/>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="name">Allan
+                  </div>
+                  <div class="title">Web Development</div>
+                </div>
+            </div>
+            <div class="wrapper">
+              <div class="header">
+                <div class="dot1"></div>
+                 <div class="dot2"></div>
+                 <div class="dot3"></div>
+                 <i class="fa fa-info"></i>
+              </div>
+              <div class="personal-info">
+                <img src="./src/img/icoprofile.jpg" alt="" />
+                <h1>Allan<br /><span>de Franca</span></h1>
+              </div>
+              <div class="other-info">
+                <div class="phone"><i class="fa fa-mobile"></i><h3>Phone: (353) 83 135-5108</h3></div>
+                <div class="email"><i class="fa fa-envelope"></i><h3>Email: allandefranca@gmail.com</h3></div>
+                <div class="bio"><h3>Bio:</h3></div>
+                <div class="bio-box">
+                  <p>I work as an IT professional for over 7 years, I started as a help desk support and progressed to development. Working with the most diverse languages ​​(Javascript, HTML, CSS, BOOTSTRAP, PHP, Apsx, C# , Angular) as well as version control system (TFS , GIT)</p>
+                  <p>Dedicated, organized and self-directed team player with strong written, communication and relationship-building skills. Capable of identifying potential problems and providing recommendation for resolution.
+                  <p>Regards</p>
+                  <p>Allan</p>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+</body>
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                if ($(document).width() > 768){
+                    $('.nav').addClass('affix')
+                } else {
+                    $('.nav').addClass('affixresponsive');
+                    
+                }
+                // $('.logo').removeClass('logohide')
+                
+                // console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+                $('.nav').removeClass('affixresponsive');
+                // $('.logo').addClass('logohide')
+            }
+        });
+    </script>
+
+  <script src="./src/js/navbar.js"></script>
+</html>
